@@ -10,6 +10,6 @@ public:
         for(int i=0;i<nums2.size();i++)if(seti1.find(nums2[i])!=seti1.end())seti2.insert(nums2[i]);
         for(auto x:seti2)ans.push_back(x);
         return ans;
-        
+
     }
 };
