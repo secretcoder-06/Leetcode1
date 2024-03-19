@@ -1,5 +1,5 @@
 class Solution {
-public:
+public: 
     int leastInterval(vector<char>& tasks, int n) {
         int freq[26] = {0};
         for(char task : tasks){
