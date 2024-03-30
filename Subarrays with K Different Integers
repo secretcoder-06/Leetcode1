@@ -1,7 +1,7 @@
 class Solution {
 public:
     int n;
-    int goodLessEqualK(vector<int>& nums, int k){
+    int goodLessEqualK(vector<int>& nums, int k){ 
         int distinct=0;
         int freq[20001]={0};
         int cnt=0;
