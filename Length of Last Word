@@ -5,7 +5,7 @@ public:
         for (r=s.size()-1; r>=0; r--)
             if (s[r]!=' ') break;
         l=r;
-        for (;l>=0;l--)
+        for (;l>=0;l--) 
             if (s[l]==' ') break;
         return r-l;
     }
