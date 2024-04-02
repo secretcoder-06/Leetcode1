@@ -1,5 +1,5 @@
 class Solution {
-public:
+public: 
     bool isIsomorphic(string s, string t) {
         vector<int> indexS(200, 0); 
         vector<int> indexT(200, 0); 
