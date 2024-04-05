@@ -1,7 +1,7 @@
 class Solution {
 public:
     string makeGood(string s) {
-        int n=s.size();
+        int n=s.size(); 
         string ans=string(1, s[0]);
         for(int i=1; i<n; i++){
             if (!ans.empty() && s[i]!=ans.back() 
