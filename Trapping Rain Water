@@ -6,7 +6,7 @@ public:
         int l=0,r=0,ans=0;
         while(left<=right){
             if(a[left]<=a[right]){
-                // left may be contrtibuting
+                // left may be contrtibuting 
                 l=max(l,a[left]);
                 ans+=l-a[left];
                 left++; 
