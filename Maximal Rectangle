@@ -2,7 +2,7 @@ class Solution {
 public:
     int maximalRectangle(vector<vector<char>>& matrix) {
         if (matrix.empty()) return 0;
-        const int m = matrix.size(), n = matrix[0].size();
+        const int m = matrix.size(), n = matrix[0].size(); 
         int left[n], right[n], height[n];
         fill_n(left, n, 0); fill_n(right, n, n); fill_n(height, n, 0);
         int res = 0;
