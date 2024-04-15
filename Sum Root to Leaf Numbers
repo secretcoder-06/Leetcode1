@@ -5,7 +5,7 @@ public:
         if(root->left == nullptr && root->right == nullptr)
             return true;
         return false;
-    }
+    } 
     int sumNumbers(TreeNode* root, int cur)
     {
         if(root == nullptr)
