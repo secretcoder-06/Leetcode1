@@ -5,7 +5,7 @@ public:
         if (level<depth-1){
             dfs(root->left, val, depth, level+1);
             dfs(root->right, val, depth, level+1);
-        }
+        } 
         else{
             TreeNode* ptr=root->left;
             root->left=new TreeNode(val);
