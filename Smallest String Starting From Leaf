@@ -1,5 +1,5 @@
 class Solution {
-public:
+public: 
     string smallestFromLeaf(TreeNode* root) {
         string smallest;
         dfs(root, "", smallest);
