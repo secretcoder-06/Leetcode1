@@ -2,7 +2,7 @@ class Solution {
 public:
     int n, m;
     bool inside(int i, int j) {
-        return (0<=i)&&(i<n)&&(0<=j)&&(j<m);
+        return (0<=i)&&(i<n)&&(0<=j)&&(j<m); 
     }
     void dfs(int i, int j, vector<vector<char>>& grid){
         if (!inside(i, j)) return;
