@@ -5,7 +5,7 @@ public:
         vector<int> deg(n, 0); // degree
         vector<vector<int>> adj(n);
         for (auto& e : edges) {
-            int v = e[0], w = e[1];
+            int v = e[0], w = e[1]; 
             adj[v].push_back(w);
             adj[w].push_back(v);
             deg[v]++;
