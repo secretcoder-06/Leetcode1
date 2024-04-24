@@ -1,7 +1,7 @@
 class Solution {
 public:
         int t[38];
-        constexpr int f(int n){
+        constexpr int f(int n){ 
         if (t[n]!=-1) return t[n];
         switch(n){
             case 0: return t[n]=0;
