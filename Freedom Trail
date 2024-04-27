@@ -1,6 +1,6 @@
 class Solution {
 public:
-    int findRotateSteps(string ring, string key) {
+    int findRotateSteps(string ring, string key) { 
         vector<int> pos[26];
         const int r = ring.size(), k= key.size();
 
