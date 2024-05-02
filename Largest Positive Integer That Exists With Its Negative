@@ -1,4 +1,4 @@
-class Solution {
+ class Solution {
 public:
     int findMaxK(vector<int>& nums) {
          uint8_t seen[1001]={0};
