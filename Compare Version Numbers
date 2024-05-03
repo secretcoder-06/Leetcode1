@@ -3,7 +3,7 @@ public:
     int compareVersion(string v1, string v2) {
         const int n1=v1.size(), n2=v2.size();
         int x1=0, x2=0;
-        for(int i=0, j=0; i<n1 || j<n2; i++, j++){
+        for(int i=0, j=0; i<n1 || j<n2; i++, j++){ 
             while(i<n1 && v1[i]!='.'){
                 x1=10*x1+(v1[i++]-'0');
             }
