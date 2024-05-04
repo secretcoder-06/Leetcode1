@@ -1,6 +1,6 @@
 class Solution {
 public:
-    int numRescueBoats(vector<int>& people, int limit) {
+    int numRescueBoats(vector<int>& people, int limit) { 
          unsigned freq[30001]={0};
         int maxW=0, minW=30001;
         for(int x: people){
