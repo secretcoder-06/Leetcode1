@@ -3,7 +3,7 @@ public:
     ListNode* removeNodes(ListNode* head) {
         vector<int> stack;
         ListNode dummy=ListNode();
-        ListNode* tail=&dummy; //Maintain a pointer to the tail 
+        ListNode* tail=&dummy; //Maintain a pointer to the tail  
         ListNode* ptr=NULL;
         for (ListNode* curr=head; curr; curr = curr->next, delete ptr) {
             int x = curr->val;
