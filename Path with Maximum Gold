@@ -3,7 +3,7 @@ private:
     int row, col;
     int gold;
     
-    void f(int i, int j, int sum, vector<vector<int>>& grid) {
+    void f(int i, int j, int sum, vector<vector<int>>& grid) { 
         if (i < 0 || i >= row || j < 0 || j >= col || grid[i][j] == 0) return;
         int tmp = grid[i][j];
         sum += tmp;
