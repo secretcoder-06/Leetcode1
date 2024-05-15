@@ -1,5 +1,5 @@
 class Solution {
-public:
+public: 
     int maximumSafenessFactor(vector<vector<int>>& grid) {
          int n = grid.size();
         auto bounds_check = [n](int r, int c){ return r >= 0 && c >= 0 && r < n && c < n; }; 
