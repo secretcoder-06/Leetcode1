@@ -2,7 +2,7 @@ class Solution {
 public:
     int maximumSafenessFactor(vector<vector<int>>& grid) {
          int n = grid.size();
-        auto bounds_check = [n](int r, int c){ return r >= 0 && c >= 0 && r < n && c < n; };
+        auto bounds_check = [n](int r, int c){ return r >= 0 && c >= 0 && r < n && c < n; }; 
         deque<tuple<int, int, int>> q;
         for (int i = 0; i < n; ++i) for (int j = 0; j < n; ++j) {
             if (grid[i][j]) q.emplace_back(i, j, 1);
