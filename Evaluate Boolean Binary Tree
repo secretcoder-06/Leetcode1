@@ -1,7 +1,7 @@
 class Solution {
 public:
     bool evaluateTree(TreeNode* root) {
-        vector<TreeNode*> stack={root};
+        vector<TreeNode*> stack={root}; 
         while(!stack.empty()){
             auto Node=stack.back();
             if (!Node->left && !Node->right){
