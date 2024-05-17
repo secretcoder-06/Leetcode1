@@ -1,7 +1,7 @@
 class Solution {
 public:
     TreeNode* removeLeafNodes(TreeNode* root, int target) {
-        if (root -> left) {
+        if (root -> left) { 
             root->left = removeLeafNodes(root->left, target);
         }
         if (root -> right) {
