@@ -5,7 +5,7 @@ class Solution {
             dp[i][i] = true;
             if (i+1 < n) dp[i][i+1] = (s[i] == s[i+1]);
         }
-        for (int len = 3; len <= n; len++){
+        for (int len = 3; len <= n; len++){ 
             for (int i = 0, j; i <= n - len; i++){
                 j = i + len - 1;
                 dp[i][j] = (s[i] == s[j] && dp[i+1][j-1]);
