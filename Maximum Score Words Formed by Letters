@@ -2,7 +2,7 @@ class Solution {
 public:
     int n;
     array<char, 26> freq;
-    bool f(array<char, 26>& freq, int& point, string& w, vector<int>& score){
+    bool f(array<char, 26>& freq, int& point, string& w, vector<int>& score){ 
         for(char c: w){// time O(|w|)
             int idx=c-'a';
             freq[idx]--;
