@@ -3,7 +3,7 @@ public:
     
     vector<string> ans;
 
-    void solve(int i, string &sentence, string &givenString, unordered_map<string, bool> &doesExist) {
+    void solve(int i, string &sentence, string &givenString, unordered_map<string, bool> &doesExist) { 
         if (i >= givenString.size()) {
             ans.push_back(sentence);
             return;
