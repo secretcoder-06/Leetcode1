@@ -4,7 +4,7 @@ public:
     //Use binary search to find number of nums[i]>=x
     inline int f(int x, vector<int>& nums){
         int i=lower_bound(nums.begin(), nums.end(), x)-nums.begin();
-        return n-i;
+        return n-i; 
     }
     inline int g(int x, vector<int>& nums){
         return f(x, nums)-x;
