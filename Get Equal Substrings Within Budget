@@ -1,7 +1,7 @@
 class Solution {
 public:
     static int equalSubstring(string s, string t, int maxCost) {
-        const int n=s.size();
+        const int n=s.size(); 
         int l=0, r;// 2 pointers
         int cost=0, len=0;
 
