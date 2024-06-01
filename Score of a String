@@ -1,0 +1,18 @@
+class Solution {
+public:
+int n;
+int diff;
+    int scoreOfString(string s) {
+    n = s.length();
+
+    if(n==0) return 0;
+
+    diff = 0;
+    for(int i=1;i<n;i++){
+        
+        diff = diff + abs(s[i] - s[i-1]);
+    }
+    return diff;
+
+    }
+};
