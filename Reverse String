@@ -3,7 +3,7 @@ public:
 int n;
     void reverseString(vector<char>& s) {
         n = s.size();
-         for(int i=0, j=n-1; i<j; i++, j--)
+         for(int i=0, j=n-1; i<j; i++, j--) 
             swap(s[i], s[j]);
        
     }
