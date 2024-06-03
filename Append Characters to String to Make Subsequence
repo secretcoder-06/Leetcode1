@@ -1,0 +1,19 @@
+class Solution {
+public:
+    int appendCharacters(string s, string t) {
+        int n = s.length();
+        int m = t.length();
+        int i = 0, j = 0;
+
+        // Traverse both strings
+        while (i < n && j < m) {
+            if (s[i] == t[j]) {
+                j++; // Move to the next character in t
+            }
+            i++; // Always move to the next character in s
+        }
+
+        // Characters left in t after i reaches the end of s
+        return m - j;
+    }
+};
