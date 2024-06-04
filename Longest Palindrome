@@ -4,7 +4,7 @@ public:
         int freq[58]={0}; //'A'=65~'z'=122
         for(char c: s)
             freq[c-'A']++;
-        int len=0;
+        int len=0; 
         bool hasOdd=0;
         for(int f: freq){
             if ((f&1)==0) len+=f;
