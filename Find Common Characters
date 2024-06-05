@@ -1,7 +1,7 @@
 class Solution {
 public:
 int n,m;
-    vector<string> commonChars(vector<string>& words) {
+    vector<string> commonChars(vector<string>& words) { 
          array<char, 26> freq, minFreq;
         minFreq.fill(100);
         for(auto& w: words){
