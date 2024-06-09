@@ -5,7 +5,7 @@ public:
         int prefix=0;
         mod_k[0]=1;// consider prefix sums that are directly divisible by k
 
-        for(int x: nums){
+        for(int x: nums){ 
             prefix=(prefix+x)%k;
             prefix+=((prefix<0)?k:0);
             mod_k[prefix]++;
