@@ -1,6 +1,6 @@
 class Solution {
 public:
-int n;
+int n; 
 int sum;
     int heightChecker(vector<int>& heights) {
     vector<int> expected = heights;
