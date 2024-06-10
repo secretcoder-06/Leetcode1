@@ -1,0 +1,18 @@
+class Solution {
+public:
+int n;
+int sum;
+    int heightChecker(vector<int>& heights) {
+    vector<int> expected = heights;
+    n = heights.size();
+    sum = 0;
+    sort(expected.begin(),expected.end());
+    
+    for(int i=0;i<n;i++){
+        if(heights[i] != expected[i]){
+            sum = sum + 1;
+        }
+    }
+    return sum;
+    }
+};
