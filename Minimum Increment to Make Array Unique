@@ -3,7 +3,7 @@ public:
 int n,sum;
     int minIncrementForUnique(vector<int>& nums) {
         int freq[200001]={0}, x0=1e5, n=nums.size();
-        for(int x: nums){
+        for(int x: nums){ 
             freq[x]++;
             x0=min(x0, x);
         }
