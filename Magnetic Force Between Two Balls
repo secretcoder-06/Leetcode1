@@ -2,7 +2,7 @@ class Solution {
 public:
     int n;
     inline bool f(int force, vector<int>& position, int m){
-        int x=position[0], balls=1;
+        int x=position[0], balls=1; 
         for(int i=1; i<n && balls<=m; i++){
             if (position[i]-x>=force){
                 x=position[i];
