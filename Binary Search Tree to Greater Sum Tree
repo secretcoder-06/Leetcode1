@@ -3,7 +3,7 @@ private:
     int sum = 0;
 
     void traverse(TreeNode* root) {
-        if (root) {
+        if (root) { 
             traverse(root->right);  // Traverse the right subtree
             sum += root->val;  // Update the sum
             root->val = sum;  // Update the current node's value
