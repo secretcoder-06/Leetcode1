@@ -4,7 +4,7 @@ public:
     void inorder(TreeNode*root)
     {
         if(root)
-        {
+        { 
             inorder(root->left);
             a.push_back(root->val);
             inorder(root->right);
