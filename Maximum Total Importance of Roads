@@ -1,7 +1,7 @@
 class Solution {
 public:
     long long maximumImportance(int n, vector<vector<int>>& roads) {
-        vector<int> deg(n, 0);// deg(v)=# of of paths containng v 
+        vector<int> deg(n, 0);// deg(v)=# of of paths containng v  
         for(auto& e: roads){
             deg[e[0]]++;
             deg[e[1]]++;
