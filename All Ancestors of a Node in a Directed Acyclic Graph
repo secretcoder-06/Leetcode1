@@ -4,7 +4,7 @@ private:
     vector<vector<int>> adj, ans;
     void DFS(int curr, int par)
     {
-        for (int child : adj[curr])
+        for (int child : adj[curr]) 
         {
             if (!ans[child].empty() && ans[child].back() == par)
                 continue;
